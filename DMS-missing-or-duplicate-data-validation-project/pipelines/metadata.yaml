@@ -1,0 +1,39 @@
+blocks:
+  - all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: dms-data-validation
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data loader
+  upstream_blocks: []
+  uuid: dms-data-validation
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: 2024-07-27 14:12:20.870943+00:00
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: dms-data-validation
+notification_config: {}
+retry_variables_dir: null
+run_pipeline_in_one_process: false
+settings: {}
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: dms-data-validation
+variables_dir: /home/src/mage_data/main_project
+widgets: []

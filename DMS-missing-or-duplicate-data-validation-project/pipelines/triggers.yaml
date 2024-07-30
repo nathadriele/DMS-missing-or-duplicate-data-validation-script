@@ -1,0 +1,14 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2024-07-27 11:12:49.548536
+  name: dms-data-validation
+  pipeline_uuid: dms-data-validation
+  schedule_interval: @daily
+  schedule_type: time
+  settings:
+   landing_time_enabled: true
+  sla: null
+  start_time: 2024-07-27 08:00:00
+  status: active
+  variables: []
