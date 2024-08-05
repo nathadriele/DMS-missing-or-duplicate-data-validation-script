@@ -100,6 +100,6 @@ The triggers.yaml file defines the schedule and settings for triggering the data
 
 ### Contribution to Data Engineering
 This project plays a vital role in Data Engineering by ensuring that the data stored in PostgreSQL tables conforms to the expected data types. Data Engineers rely on accurate and reliable data to build data pipelines, perform ETL processes, and generate meaningful insights. By validating data types:
-- Error Reduction: Identifies and mitigates data type mismatches early, reducing errors in downstream processes.
-- Automated Monitoring: Automates data validation, allowing Data Engineers to focus on more complex tasks.
-- Proactive Alerts: Sends notifications about validation results, enabling timely interventions to maintain data quality.
+- `Error Reduction`: Identifies and mitigates data type mismatches early, reducing errors in downstream processes.
+- `Automated Monitoring`: Automates data validation, allowing Data Engineers to focus on more complex tasks.
+- `Proactive Alerts`: Sends notifications about validation results, enabling timely interventions to maintain data quality.
