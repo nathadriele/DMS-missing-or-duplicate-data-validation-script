@@ -8,10 +8,12 @@ The objective of this project is to automate the validation of data replication 
 - `Processing Multiple DMS Replication Tasks`: Iterates over a predefined set of DMS replication tasks identified by their Amazon Resource Names (ARNs), which are specified in the tasks dictionary within the script.
 - `Validating Task Existence`: For each task, the script checks if the replication task exists in AWS DMS. If a task is not found, it logs a warning message and proceeds to the next task without interrupting the entire validation process.
 - `Retrieving Table Statistics`: For existing tasks, it retrieves detailed table statistics using the `describe_table_statistics` method from the AWS DMS client. This information includes operation counts like inserts, updates, and deletes, as well as their applied counterparts.
-- **`Detecting Missing or Duplicate Data`**:
+
+- **Detecting Missing or Duplicate Data**:
    - Missing Data: Compares the expected number of operations `(inserts, updates, deletes)` with the applied operations `(applied_inserts, applied_updates, applied_deletes)`. If the expected operations exceed the applied ones, it identifies potential missing data.
    - `Duplicate Data`: If the applied operations exceed the expected ones, it flags potential duplicate data.
-- **`Generating Event Notifications`**:
+
+- **Generating Event Notifications**:
    - `Event Naming`: Constructs an event name based on the task name and the type of issue detected `(e.g., task1_dms_missing, task2_dms_duplicates, or task3_dms_no_issues)`.
    - `Status Codes`: Assigns a status code where 0 indicates issues detected `(missing or duplicate data)` and 1 indicates no issues.
    - `API Integration`: Sends a POST request to a specified API endpoint `(NOTIFIER_URL)` with the event name and status code in JSON format to notify stakeholders of the validation results.
@@ -64,7 +66,7 @@ This Python script interacts with AWS Database Migration Service (DMS) to valida
 
 ### Notification
 - After validating the data, the script sends notifications based on the results:
-    - Event Name and Status: Defines the event name and status (0 for detected issues, 1 for no issues) and sends a POST request to NOTIFIER_URL.
+    - Event Name and Status: Defines the event name and status (0 for detected issues, 1 for no issues) and sends a POST request to `NOTIFIER_URL`.
     - HTTP Response Handling: Logs an error if the request fails and confirms successful notification delivery.
 
 ### Testing
