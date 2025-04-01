@@ -1,6 +1,6 @@
 ## DMS Missing or Duplicate Data Validation Script
 
-![image](https://github.com/user-attachments/assets/28e0050d-5d29-4cd3-87e4-b844ac084bb0)
+![image](https://github.com/user-attachments/assets/034f1243-ed4d-4c79-9acf-9f92587f8007)
 
 ### Overview
 This repository contains a Python script designed to validate data replication tasks in AWS Database Migration Service (DMS). The script checks for potential issues such as missing or duplicate data in the tables being replicated. It leverages AWS SDK for Python (Boto3) to interact with AWS services and sends notifications about the status of each task to a specified API endpoint.
